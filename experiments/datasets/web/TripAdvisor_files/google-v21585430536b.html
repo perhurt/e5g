@@ -1,0 +1,127 @@
+
+<!-- saved from url=(2095)https://static.tacdn.com/static/page_moniker/google-v21585430536b.html#pixelType=PAGEVIEW&tadomain=tripadvisor.com&reqUnique=2b3de57e24a051e53b4b7c34a473db1d9ccb592e&userUnique=904d7bcf06f03c225193fe656f632fbd3ed7388a&fbUserUnique=ac6ddc7edae6b98aac5554042d63ca3fae791053c78cb4d4c0a2998c46d500ea&locale=en_US&countryID=189806&seqId=5&device=Desktop&fbDevice=1&userGeo=189806&siteType=d&trueServlet=Home&fbTrueServlet=A&servlet=Home&geoFeedBucket=all&serverName=www.tripadvisor.com&puid=W@L2NgoQJX8AAf9XPcUAAAAX&isMobileDevice=n&rtPath=www.tamgrt.com/RT&random=1389497942&taSplit=1&mcid=10568&fbChannel=2&criteoDedup=0&tasource=SEO&isClickoutYN=no&isLoggedIn=N&securelyLoggedIn=N&stuid=NY1QkB0y0N7ozxKjlUNjmSSVWdu82utjVn_Peu7Egw6ND25um6gx7O_Fvv4o2cYa&countryAlpha2=US&criteoPartnerId=4653&criteoAttractionPartnerId=26270&criteoHotelAcct=%5Ban%3Dweb-hotels-tripadvisor.com%26cn%3Dus%26ln%3Den%2Can%3Dweb-hotels-0-tripadvisor.com%26cn%3Dus%26ln%3Den%2Can%3Dweb-hotels-1-tripadvisor.com%26cn%3Dus%26ln%3Den%2Can%3Dweb-hotels-2-tripadvisor.com%26cn%3Dus%26ln%3Den%5D&flight_originid=&flight_destid=&flight_startdate=2018-11-21&flight_enddate=2018-11-28&dynx_itemid=null_null_20181121_20181128&flight_num_tix=1&attractionShoppingCartTotalPriceUSD=0.00&facebookuvm_v2UlbScore=0.7777653055646072&facebookuvm_v2UlbBucket=23&facebookUlbScore=0.900774494885&facebookUlbBucket=100&googleExperimentSegment=control&googleUlbScore=0.510998467&googleUlbBucket=2&googleuvm_v2UlbBucket=2&googleuvm_v2UlbScore=0.398416219&UVMBESTSCORE=0.08&UVMSCOPE=UVM_V2&UVMSAVEABLE=0&googleuvm_v2.1UlbBucket=1&googleuvm_v2.1UlbScore=0.5436623837114001&googleuvm_v2.1UlbBucketParamName=uvm_display_desktop_bucket&criteoUlbScore=0.5436623837114001&criteoUlbBucket=1&criteoUlbScoreCurrent=0.5436623837114001&criteoUlbBucketCurrent=1&DBISCORE=0.013904290373548133&DBIFLAG=false&mofSlice=80&mofLastUpdated=20181107&smarterTravelPixelID=gqLWKHSnTxes4YmmtgWkqA&smarterTravelPixelDomain=p.smartertravel.com&isSTConversion=false&googleCRMId=50110611636f636a41e4ad82f27943f6a327a04c&rexSplit=c&NanigansTestSegment=0&pixelName=google_pixel -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  </head>
+  <body>
+    <script type="text/javascript">
+      var query_string = {};
+      var query = window.location.hash.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+          // If first entry with this name
+        if (typeof query_string[pair[0]] === "undefined") {
+          query_string[pair[0]] = pair[1];
+          // If second entry with this name
+        } else if (typeof query_string[pair[0]] === "string") {
+          var arr = [ query_string[pair[0]], pair[1] ];
+          query_string[pair[0]] = arr;
+          // If third or later entry with this name
+        } else {
+          query_string[pair[0]].push(pair[1]);
+        }
+      }
+
+      var makePropId = function () {
+        var servlet = query_string["servlet"];
+        if (servlet === 'Hotel_Review' ||
+            servlet === 'HotelHighlight' ||
+            servlet === 'ShowUserReviews' ||
+            servlet === 'ShowUserReviewsHotels' ||
+            servlet === 'MobileShowUserReviews' ||
+            servlet === 'MobileHotel_Review' ||
+            servlet === 'MobileHotelHighlight' ||
+            servlet === 'CheapFlightsHome' ||
+            servlet === 'Home' ||
+            servlet === 'HomeRebranded') {
+            return query_string["propId"] || query_string["geoMostPop"] || query_string["loc1"];
+        }
+        var itemList = [];
+        for (var i = 1; i <= 3; i++) {
+            var val = query_string['loc' + i];
+            if (val) {
+                itemList.push(val);
+            } else {
+                break;
+            }
+        }
+        return itemList;
+      };
+      var google_conversion_id = 1020463497;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "666666";
+      var google_conversion_label = "VFtrCMfC5AIQiZPM5gM";
+      var google_conversion_value = 0;
+      var device = query_string["device"];
+      var isMobile = device !== "Desktop" && device !== "Tablet";
+      var isDated = "y";
+      if (query_string["dateIn"] === undefined || query_string["dateOut"] === undefined) {
+        isDated = "n";
+      }
+      var google_tag_params = {
+        POS: query_string["locale"],
+        destcity: query_string["geoName"],
+        GeoId: query_string["geoId"],
+        PropId: makePropId(),
+        checkindate: query_string["dateIn"],
+        checkoutdate: query_string["dateOut"],
+        mobile: isMobile ? "y" : "n",
+        servlet: (query_string["pixelType"] === "CLICKOUT" ?  ((isMobile ? "Mobile" : "") + "MetaConversion") :
+        query_string["trueServlet"]),
+        travel_destid: query_string["geoId"],
+        travel_startdate: query_string["dateIn"],
+        travel_enddate: query_string["dateOut"],
+        hrental_startdate: query_string["dateIn"],
+        hrental_enddate: query_string["dateOut"],
+        hrental_totalvalue: query_string["gbv2k"],
+        ulb_bucket: query_string["googleUlbBucket"],
+        user_slice: query_string["mofSlice"],
+        collection_date: query_string["mofLastUpdated"],
+        is_dated: isDated,
+        core_device_type: query_string["device"],
+        mcid: query_string["mcid"]
+      };
+
+      google_tag_params["hrental_id"] = google_tag_params["PropId"];
+      if (query_string["pageType"]) {
+        google_tag_params["travel_pagetype"] = query_string["pageType"];
+      }
+
+      var handleGoogleModelName = function(name) {
+        var tagParamName = "ulb_bucket_" + name;
+        handleGoogleModelNameWithTagName(name, tagParamName);
+      }
+
+      var handleGoogleModelNameWithTagName = function(name, tagParamName) {
+          var fullName = "google" + name + "UlbBucket";
+          if (query_string[fullName]) {
+              google_tag_params[tagParamName] = query_string[fullName];
+          }
+          // These are just for debugging
+          var rawScoreName = "google" + name + "UlbScore";
+          if (query_string[rawScoreName]) {
+              google_tag_params[rawScoreName] = query_string[rawScoreName];
+          }
+      }
+
+      // These strings must correspond with those in UserLevelBiddingCompany.java
+      handleGoogleModelName("uvm_v2");
+      handleGoogleModelNameWithTagName("uvm_complex", "core_uvm_complex");
+      handleGoogleModelNameWithTagName("mobile", "core_mobile_uvm_v2");
+      handleGoogleModelNameWithTagName("uvm_v2.1", "core_uvm_v2_1");
+      handleGoogleModelNameWithTagName("uvm_v2.1", query_string["googleuvm_v2.1UlbBucketParamName"]);
+
+      var EXPERIMENT_SEGMENT_NAME = "googleExperimentSegment";
+      if (query_string[EXPERIMENT_SEGMENT_NAME]) {
+        google_tag_params["google_experiment_segment"] = query_string[EXPERIMENT_SEGMENT_NAME];
+      }
+      var google_custom_params = window.google_tag_params;
+      var google_user_id = query_string["googleCRMId"];
+      var google_remarketing_only = true;
+    </script>
+    <script src="./f.txt"></script><script src="./f(1).txt"></script>
+  
+
+</body></html>

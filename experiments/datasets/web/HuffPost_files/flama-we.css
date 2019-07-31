@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'BetFairFlama-Bold';
+    src: url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-BoldWE.woff') format('woff'),
+     url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-BoldWE.eot?#iefix') format('embedded-opentype'),
+    url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-BoldWE.eot');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BetFairFlama-Book';
+    src: url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-BookWE.woff') format('woff') ,
+    url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-BookWE.eot?#iefix') format('embedded-opentype'),
+    url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-BookWE.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BetFairFlama-Medium';
+    src: url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-MediumWE.woff') format('woff') ,
+     url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-MediumWE.eot?#iefix') format('embedded-opentype'),
+    url('https://promotions.cdnbf.net/media/english_uk/files/ci_various/betfair_webfonts/BetFairFlama-MediumWE.eot');
+    font-weight: normal;
+    font-style: normal;
+}

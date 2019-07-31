@@ -1,0 +1,67 @@
+document.write("<!--*\n");
+document.write("var aolAdId=\"18828054|106640105\";\n");
+document.write("var aolSize=\"728|90\";\n");
+document.write("var aolFormat=\"3rdPartyRichMediaRedirect\";\n");
+document.write("*-->\n");
+document.write("<scr"+"ipt type='text/javascript'>\n");
+
+document.write("var atmpMNum =  \"100024066\";\n");
+document.write("var OrigMNum = \"93317943\";\n");
+
+
+document.write("atwNetId='1065.1';\n");
+document.write("atwMN= atmpMNum;\n");
+document.write("atwCo='uk';\n");
+document.write("atwCo='uk';\n");
+document.write("atwHeight='90';\n");
+document.write("atwWidth='728';\n");
+document.write("atwOthAT='kvOrigMN='+OrigMNum;\n");
+document.write("</scr"+"ipt>\n");
+
+document.write("<scr"+"ipt type='text/javascript' src='https://s.aolcdn.com/ads/adsWrapper3.js'></scr"+"ipt>\n");
+
+
+
+document.write("<!--*\n");
+document.write("var moatClientLevel1=1065\n");
+document.write("var moatClientLevel2=1077558\n");
+document.write("var moatClientLevel3=93317943\n");
+document.write("var moatClientLevel4=3807872\n");
+document.write("var zMoatMaster=16542341\n");
+document.write("var zMoatFlight=18828054\n");
+document.write("var zMoatBanner=106640105\n");
+document.write("var zURL=https\n");
+document.write("var zMoatPlacementId=3807872\n");
+document.write("var zMoatPlacementExtId=100012756\n");
+document.write("var zMoatAdId=18828054\n");
+document.write("var zMoatCreative=0\n");
+document.write("var zMoatBannerID=1\n");
+document.write("var zMoatCustomVisp=0\n");
+document.write("var zMoatCustomVist=0\n");
+document.write("var zMoatIsAdvisGoal=0\n");
+document.write("var zMoatEventUrl=\n");
+document.write("var zMoatSize=225\n");
+document.write("var zMoatSubNetID=1\n");
+document.write("var zMoatisSelected=0\n");
+document.write("var zMoatadServer=uk.at.atwola.com\n");
+document.write("var zMoatadVisServer=\n");
+document.write("var zMoatSamplingRate=23\n");
+document.write("var zMoatliveTestCookie=\n");
+document.write("var zMoatRefSeqId=/TAAOoBFHBA\n");
+document.write("var zMoatImpRefTs=1541600001\n");
+document.write("var zMoatAlias=136as728x90m\n");
+document.write("var zMoatWebsiteID=1077558\n");
+document.write("var zMoatVert=premium\n");
+document.write("var zMoatBannerInfo=412516128\n");
+document.write("var RefreshSmall=\n");
+document.write("var RefreshLarge=\n");
+document.write("var RefreshExclusive=\n");
+document.write("var RefreshReserved=\n");
+document.write("var RefreshTime=\n");
+document.write("var RefreshMax=\n");
+document.write("var RefreshKeepSize=\n");
+document.write("var MP=N\n");
+document.write("var AdTypePriority=144\n");
+document.write("*-->\n");
+document.write('<img src="https://atpixel.alephd.com/post_adtech?umNf9lsHumpnSx71hgz3gbGXQogk1.FIqxYFvfva2szCh75Sq..ZxQYreKiV1NCsCn2egQ-i3k2tOrYFOvHMIlHXXlgBBFQ-.YBiAt32U9zHfNC6KdwUN9v7NXyRrAXobNKHOQ2AAABRx7nqybBjAmx4JHp77OZQi6iL9Rpich3FglSbQhQj-4VNbMa3YYkhmHqXuY0TXZnNuRy0yYbF5SG.zw23mTAxkq9XV0UBE9aPbl386phdipjp6vJfygr4xWPhEmfRbqQUCHmHzF7Xxw==" width="1" height="1"  style="display:none;">');
+document.write('<img src="https://c1.adform.net/serving/cookie/match/?CC=1&party=15&curl=https://pixel.advertising.com/ups/55944/sync?uid=$UID&_origin=0" width="1" height="1" style="display:none;">');

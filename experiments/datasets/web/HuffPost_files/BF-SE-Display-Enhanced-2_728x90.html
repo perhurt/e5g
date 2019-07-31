@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://s0.2mdn.net/5995877/1502980612951/BF-SE-Display-Enhanced-2_728x90.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="ad.size" content="width=728,height=90">
+    <title>728x90</title>
+    <style type="text/css">
+        * {
+            border: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var defaultClickTagEncoded = encodeURIComponent("https://www.betfair.com");
+        var clickTag = "https://www.betfair.com";
+    </script>
+
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+<body style="margin:0; padding:0">
+    <script type="text/javascript">
+        var bannerUrl = 'https://www.streameye.net/placement.aspx?id=p4105&click=';
+        var link = bannerUrl + encodeURIComponent(clickTag);
+        var iframe = document.createElement('iframe');
+        iframe.width = '728';
+        iframe.height = '90';
+        iframe.src = link;
+
+        var timeOut = setTimeout(function () {
+            document.body.appendChild(iframe);
+        },500);
+
+        var setclickTag = setInterval(function () {
+            if (encodeURIComponent(clickTag) !== defaultClickTagEncoded) {
+                link = bannerUrl + encodeURIComponent(clickTag);
+                iframe.src = encodeURI(link);
+                clearInterval(setclickTag);
+                clearTimeout(timeOut);
+                document.body.appendChild(iframe);
+            }
+        }, 50);
+
+    </script>
+
+
+<iframe width="728" height="90" src="./placement.html"></iframe></body></html>

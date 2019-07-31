@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0139)https://s0.2mdn.net/4757212/1538568732123/Hela-Sverige-S-ljer-2018-728x90-Swedish-animated-636741655312342610-5bb4b219f4ea2856ac750c28.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>BannerFlow</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <script type="text/javascript">var clickTag='';</script> <style type="text/css" media="screen">html,body,div{margin:0;padding:0;border:0}body{overflow:hidden}</style><script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script><script async="" src="./render.min.js"></script></head><body><script>var onClickTag=window.setInterval(function(){if(window.clickTag!=undefined){if(window.clickTag.indexOf('doubleclick.net')>-1||window.clickTag.indexOf('googleusercontent.com')>-1||window.location.protocol=='file:'){clearInterval(onClickTag);var c=document.createElement('div');c.setAttribute('id','bannerflow');document.body.appendChild(c);var s=document.createElement('script');s.setAttribute('src','https://cdn.bannerflow.com/bf-placements/5bb4b219f4ea2856ac750c28?targetwindow=_blank&targeturl='+encodeURIComponent(window.clickTag));document.body.appendChild(s);}}},50);</script><div id="bannerflow"></div><script src="./5bb4b219f4ea2856ac750c28"></script><div id="bf1541600111684" style="width: 728px; height: 90px; overflow: hidden; position: relative;"><div><div style="width: 728px; height: 90px;"><iframe src="./5badd817f4ea2756ac1373bb.WD0SuvjDHeab.html" class="bf_image" style="max-width: none !important; max-height: none !important; width: 728px; height: 90px; position: absolute; left: 0px; top: 0px; background-color: transparent; border: none; opacity: 0; transition: opacity 0.1s ease 0s; z-index: 1; display: none;" frameborder="0" scrolling="no" id="bf_15416001116927157"></iframe><iframe src="./5badd817f4ea2756ac1373bb.html" class="bf_animated" style="max-width: none !important; max-height: none !important; width: 728px; height: 90px; position: absolute; left: 0px; top: 0px; background-color: transparent; border: none; opacity: 1;" frameborder="0" scrolling="no" id="bf_15416001126978086"></iframe></div></div></div></body></html>

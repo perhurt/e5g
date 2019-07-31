@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="22px" viewBox="0 0 36 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5.45454545 0 36 0 30.5454545 22 0 22"></polygon>
+    </defs>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-HQ-followed" transform="translate(-612.000000, -112.000000)">
+            <g id="Group-2" transform="translate(489.000000, 110.000000)">
+                <g id="Group-7-Copy" transform="translate(123.000000, 2.000000)">
+                    <g id="Group-10">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <g id="Group-7" mask="url(#mask-2)">
+                            <g transform="translate(-2.653563, 0.000000)">
+                                <polygon id="Rectangle-11" fill="#FE3D2E" points="2.18181818 11 39.2727273 11 39.2727273 13.2 2.18181818 13.2"></polygon>
+                                <polygon id="Rectangle-11-Copy-4" fill="#FE3D2E" points="2.18181818 19.8 39.2727273 19.8 39.2727273 22 2.18181818 22"></polygon>
+                                <polygon id="Rectangle-11-Copy" fill="#FE3D2E" points="2.18181818 15.4 39.2727273 15.4 39.2727273 17.6 2.18181818 17.6"></polygon>
+                                <polygon id="Rectangle-10" fill="#2B60EE" points="2.18181818 0 41.4545455 0 41.4545455 8.8 2.18181818 8.8"></polygon>
+                                <g id="Group-13" stroke-width="1" fill="none" transform="translate(10.909091, 2.200000)">
+                                    <polygon id="Star" fill="#FFFFFF" points="2.10880179 3.18449991 0.869279199 3.84054297 1.10600695 2.45102147 0.103212106 1.46695688 1.4890405 1.26422843 2.10880179 0 2.72856309 1.26422843 4.11439148 1.46695688 3.11159664 2.45102147 3.34832439 3.84054297"></polygon>
+                                    <polygon id="Star-Copy" fill="#FFFFFF" points="8.65425634 3.18449991 7.41473374 3.84054297 7.65146149 2.45102147 6.64866665 1.46695688 8.03449504 1.26422843 8.65425634 0 9.27401763 1.26422843 10.659846 1.46695688 9.65705118 2.45102147 9.89377893 3.84054297"></polygon>
+                                    <polygon id="Star-Copy-2" fill="#FFFFFF" points="15.1997109 3.18449991 13.9601883 3.84054297 14.196916 2.45102147 13.1941212 1.46695688 14.5799496 1.26422843 15.1997109 0 15.8194722 1.26422843 17.2053006 1.46695688 16.2025057 2.45102147 16.4392335 3.84054297"></polygon>
+                                    <polygon id="Star-Copy-3" fill="#FFFFFF" points="21.7451654 3.18449991 20.5056428 3.84054297 20.7423706 2.45102147 19.7395757 1.46695688 21.1254041 1.26422843 21.7451654 0 22.3649267 1.26422843 23.7507551 1.46695688 22.7479603 2.45102147 22.984688 3.84054297"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

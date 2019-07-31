@@ -1,0 +1,14 @@
+﻿/*<!--*/(function() {var qss="&cb="+Math.floor(99999999999*Math.random());try{qss+="&ref="+encodeURIComponent(document.referrer)}catch(e){}try{qss+="&sc_r="+encodeURIComponent(screen.width+"x"+screen.height)}catch(e){}try{qss+="&sc_d="+encodeURIComponent(screen.colorDepth.toString())}catch(e){}var callDis=function(e,t){var n=function(){callDisInternal(e,t)};"complete"===document.readyState?setTimeout(n):window.addEventListener?window.addEventListener("load",n,!1):window.attachEvent("onload",n)},disCalled=!1,callDisInternal=function(e,t){if(!disCalled){disCalled=!0;var n="//"+t+"/dis/dis.aspx",o=document.createElement("iframe");o.width=o.height="0",o.style.display="none",o.src=(n+"?p="+e+qss).substring(0,2e3),o.title="Criteo DIS iframe";var r=document.getElementById("criteoTagsContainer");r?(r.appendChild(o),"undefined"!=typeof criteo_q&&"function"==typeof criteo_q.removeLater&&criteo_q.removeLater(o)):criteo_q.push({event:"appendTag",element:o})}};
+callDis(4653, 'dis.us.criteo.com');
+callDis(39692, 'dis.us.criteo.com');
+callDis(32754, 'dis.us.criteo.com');
+})();
+
+
+(function() {function writeXDMCookie(e,o,i){var n="cto_"+e+"="+o,t=i<=0,a="expires="+new Date(t?0:(new Date).valueOf()+1e3*i).toUTCString();if(null!=document.location)for(var c=document.location.hostname.split("."),r=c.length-1;0<=r;r--){var d="domain=."+c.slice(r).join(".");if(document.cookie=[n,"path=/",a,d].join("; "),-1<document.cookie.indexOf(n)&&!t)break;if(document.cookie.indexOf(n)<0&&t)break}}
+function injectPixels(e,n,t){for(var i=e.length,o=0,a=e;o<a.length;o++){var r=a[o],c=new Image;c.onload=function(){0===(i-=1)&&writeXDMCookie("pxsig",n,t)},c.src=r;var g=document.getElementById("criteoTagsContainer");g?g.appendChild(c):criteo_q.push({event:"appendTag",element:c})}}
+var urls=["https://www.tripadvisor.com/Gpits?pageAction=View&mcid=48210&suppi=&supbk="];
+injectPixels(urls,"hKu8zdJCa5T_3uuxZnWxVQ",3600);
+})();
+
+/*-->*/

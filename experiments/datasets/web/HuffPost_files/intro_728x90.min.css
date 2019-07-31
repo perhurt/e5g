@@ -1,0 +1,1 @@
+#bgWrapper,#overlay{left:0;top:0;height:100%;z-index:1}#backgroundImage,#bgWrapper,#overlay{position:absolute;width:100%;will-change:transform}#backgroundImage{bottom:0;right:0;height:auto;z-index:0}#overlay{background-color:#000;opacity:.3}
