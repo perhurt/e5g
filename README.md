@@ -1,5 +1,7 @@
 # Effektivare datatransport för 5G
 
-Vi kommer här att fylla på med all källkod, alla skripts och kompletta beskrivningar för att reproducera alla experiment som genomförts inom ramen för projektet.
+Detta repo innehåller allt tekniskt material för projektet. Varje subfolder
+(experiments, publications, ...) innehåller en README som förklarar innehållet i
+foldern.
 
-Vi kommer även att publicera annat material (såsom publikationer) här. Den första tekniska rapporten är nu publicerad, se denna [länk](publications/e5g-application-performance/e5g-application-performance.pdf).
+Projektet finansierades av Internetfonden och slutade 2019-06-30.
