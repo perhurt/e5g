@@ -5,8 +5,8 @@ istället för att be om ett protokoll (t.ex. TCP) ber om en tjänst. Denna tjä
 skapas av operativsystemet och används för att överföra data.
 
 Till exempel, säg att en webbläsare vill ha låg latens, men varken har kunskap
-om vilka transportprotokoll som kan används lokalt, eller som stöds av servern
-det skall kommunicera med. Vidare så har den ingen aning om hur protokollet
+om vilka transportprotokoll som kan användas lokalt, eller som stöds av servern
+den skall kommunicera med. Vidare så har den ingen aning om hur protokollet
 skall konfigureras optimalt eftersom webbläsaren inte känner till "omgivningen"
 (t.ex. om enheten den körs på är ansluten till internet via kabel eller 5G)
 eller vilka konfigurationsmöjligheter som finns.
@@ -22,11 +22,11 @@ Eftersom god prestanda för websurfning kräver låg latens, skapade vi en s.k.
 NEAT-profil för att konfigurera stockningskontrollen hos TCP för att uppfylla
 det. Policyn och valet av stockningskontroll gjordes utifrån vad vi observerat
 hittills i våra experiment med 5G. Denna profil finns i filen
-`low_latency_tcp.profile`.
+`low_latency_5g_tcp.profile`.
 
 Vi skapade även en profil som är tänkt för applikationer som kräver hög
 throughput, t.ex. filnedladdningsprogram. Denna profil återfinns i filen
-`high_tp_tcp.profile`.
+`high_tp_5g_tcp.profile`.
 
 
 För att använda dessa profiler behöver en applikation använda sig av
