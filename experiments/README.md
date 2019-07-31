@@ -33,5 +33,6 @@ Tre olika applikationer testades:
 2. Filnedladdning: Curl (läs mer [här](https://curl.haxx.se)) användes på klienten för att ladda hem ett antal filer av olika storlekar. Filerna var även de lagrade på webservern som användes i experimenten. 
 3. DASH-video: För att köra DASH-experimenten körde vi en version av Chrome, utan grafiskt användargränssnitt, som instruerades att spela upp en film från webserven. Med hjälp av en specialanpassad JavaScript-baserad DASH-spelare `(software/XYZ)` som fanns på webservern kunde vi få ut prestandametrik.
 
+### Köra experimenten
 De skript som användes för att köra dessa experiment finns under foldern `scripts`. Lägg märke till att de inte går att återanvända rakt av, då information specifik för vår experimentuppsättning förekommer i dem. Ett exempel på detta är t.ex. IP-adresser. Skripten förutsätter även att ett antal standardmjukvaror, t.ex. tcpdump, är installerade.
 
