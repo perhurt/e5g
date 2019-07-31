@@ -25,11 +25,11 @@ Klient <--> 4G/5G GW <--> GW <--> Server
 ### Setup
 För att kunna emulera olika nätverk så användes mjukvaran KauNetEm, vilket möjliggör att vanliga applikationer körs över ett simulerat nät. KauNetEm kördes både båda GW-maskinerna. KauNetEm finns tillgängligt [här](https://git.cs.kau.se/pub/kaunetem).
 
-För att kunna emulera ett 4G och 5G nät realistiskt så definierade vi ett antal scenarion (dokumenterade i den tekniska rapporten) som vi sedan implementerade m.h.a. mmWave-modulen för ns3 (mer info [här](https://github.com/nyuwireless-unipd/ns3-mmwave)). Vår implementation finns i filen `software/mmw-buildings.cc`. Vi körde sedan dessa scenarion för att få ut länkkarakteristik som sedan konverterades till KauNetEm-mönster m.h.a. `software/patternize.pl`.
+För att kunna emulera ett 4G och 5G nät realistiskt så definierade vi ett antal scenarion (dokumenterade i den tekniska rapporten) som vi sedan implementerade m.h.a. mmWave-modulen för ns3 (mer info [här](https://github.com/nyuwireless-unipd/ns3-mmwave)). Vår implementation finns i filen `software/mmw-buildings.cc`. Vi körde sedan dessa scenarion för att få ut länkkarakteristik som sedan konverterades till KauNetEm-mönster m.h.a. `software/patternize.py`.
 
 ### Applikationerna
 Tre olika applikationer testades:
-1. Web: Puppeteer (läs mer [här](https://pptr.dev)) användes på klienten för att ladda hem ett antal siter vi speglat. De speglade siterna var lagrade, och tillgängliga, via en webbserver på servern. Puppeteer användes för att det går att automatisera experiment och man kan få ut många olika metriker. Det puppeteer-program som använder finns under `software/XYZ` och de olika siterna finns sparade under `datasets/web`.
+1. Web: Puppeteer (läs mer [här](https://pptr.dev)) användes på klienten för att ladda hem ett antal siter vi speglat. De speglade siterna var lagrade, och tillgängliga, via en webbserver på servern. Puppeteer användes för att det går att automatisera experiment och man kan få ut många olika metriker. Det puppeteer-program som användes var `software/puppeteer.js` och de olika siterna finns sparade under `datasets/web`.
 2. Filnedladdning: Curl (läs mer [här](https://curl.haxx.se)) användes på klienten för att ladda hem ett antal filer av olika storlekar. Filerna var även de lagrade på webservern som användes i experimenten. 
 3. DASH-video: För att köra DASH-experimenten körde vi en version av Chrome, utan grafiskt användargränssnitt, som instruerades att spela upp en film från webserven. Med hjälp av en specialanpassad JavaScript-baserad DASH-spelare `(software/XYZ)` som fanns på webservern kunde vi få ut prestandametrik.
 
